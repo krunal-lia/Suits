@@ -1,0 +1,580 @@
+/* ----------------------------------------- */
+/* ----------BASIC-SETUP-------------------- */
+/* ----------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* ----------------------------------------- */
+/* ----------REUSABLE-CONTENT----------------- */
+/* ----------------------------------------- */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.summary {
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+/*----------btn---------*/
+
+.btn {
+    display: inline-block;
+    color: #e2e2e2;
+    padding: 10px 30px;
+    border: 1px solid #eb2f06;
+    background-color: #eb2f06;
+    border-radius: 200px;
+    text-decoration: none;
+    opacity: 0.9;
+    transform: translateY(30px);
+    box-shadow: 0 3px 0 #fa5d3b;
+    transition: background-color 0.2s;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #b92505;
+}
+
+.btn:active {
+    transform: translateY(32px);  
+    box-shadow: 0 0 0 #fa5d3b;
+}
+
+/*----------VIDEO ---------*/
+
+video{
+    width: 81%;
+    height: auto;
+    margin-top: 10px;
+}
+.video-section {
+    display: inline-block;
+    width: 65%;
+    text-align: center;
+}
+
+/*----------Paragraph ---------*/
+
+.summary {
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+/* ----------------------------------------- */
+/* ----------HEADINGS----------------- */
+/* ----------------------------------------- */
+
+
+h1,h2,h3,h5 {
+    margin-bottom: 30px; 
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    color: #d8e1e3;
+    margin-top: 0;
+    font-size: 700%;
+    font-weight: 200;
+    letter-spacing: 10px;
+    transform: translateX(-0.7%);
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 200%;
+    word-spacing: 8px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+
+
+h2::after {
+    display: block;
+    height: 2px;
+    width: 130px;
+    margin: 0 auto;
+    background-color: #fa4f2a;
+    margin-top: 30px;
+    content: " "; 
+    margin-bottom: 40px;  
+}
+
+h3 {
+    font-size: 150%;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-weight: 300;
+    color: #eb2f06;
+}
+
+h5{
+    font-size: 180%;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 280%;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* ----------------------------------------- */
+/* ----------HEADER-CONTENT----------------- */
+/* ----------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(imgs/Suits1.jpg);  
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+     background-attachment: fixed;
+}
+
+.hero-text {
+    position: absolute;
+    width: 100%; 
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.suits-logo {
+    float: left;
+    margin-top:43px;
+    height: 35px;
+    width: auto;
+}
+
+/*Main nav*/
+
+.main-nav {
+    margin-top: 47px;
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 12.5px;
+}
+
+.main-nav li:last-of-type {
+    padding-right: 0;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #d8e1e3;
+    text-transform: uppercase;
+    font-size: 110%;
+    font-weight: 400;
+    transition: color 0.2s ;
+    letter-spacing: 1px;    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #eb2f06;
+}
+
+/*Sticky nav*/
+.sticky {
+    position: fixed;
+    background-color: #fee6e1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 2px #fed8d0;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a {
+    color: #555;
+    letter-spacing: 1px;    
+    font-weight: 300;
+    padding-bottom: 13px; 
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ,border-bottom 0.2s;
+}
+
+.sticky .main-nav {
+    margin: 15px 0;
+}
+
+.sticky .suits-logo {
+    margin:15px 0;
+    height: 25px;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+    color: #eb2f06;
+    border-bottom: 2px solid #eb2f06;
+}
+
+/* ----------------------------------------- */
+/* ----------REVIEW-SECTION----------------- */
+/* ----------------------------------------- */
+
+
+.reviews-section {
+    display: inline-block;
+    width: 35%;
+    float: left;
+}
+
+.review { 
+    margin-bottom: 30px;
+    width: 80%;
+    background-color: #eb30060e;
+    border-radius: 20%;
+    padding: 30px 0;
+    margin-left: 40px;
+    box-shadow: 0 2px 2px #eb30063a;
+    text-align: center;
+}
+
+.tvcom {
+    margin-top: 10px;
+}
+
+.tvcom:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)),url(imgs/tv.com.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.imdb:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url(imgs/download.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.tomatoes:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.65),rgba(255, 255, 255, 0.65)),url(imgs/images.png);
+    background-position: center;
+    background-size: cover;
+}
+.review a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.2s;
+}
+
+.reviewer {
+    display: inline-block;   
+    width: 52%;
+}
+
+.rating {
+    display: inline-block;
+    font-size: 125%;
+    font-weight: 300;
+    margin-left: 30px;
+    text-align: right;
+    color: #000;;
+}
+
+.rating span{
+    font-size: 70%;
+}
+
+.review a:hover {
+    font-size: 110%;
+    font-weight: 400;
+}
+
+.series-overview {
+    background-color: #f8f8f8;
+}
+/* ----------------------------------------- */
+/* ----------CAST----------------- */
+/* ----------------------------------------- */
+
+.section-cast {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(imgs/new-york-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.section-cast h2 {
+    color: #fff;
+}
+.cast-photo {
+    width: 130px;
+    height: auto;
+    border-radius: 50%;
+    padding: 15px 0;
+}
+
+.cast {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 85%;
+    margin-left: 7.5%;
+    box-shadow: 2px 2px 2px #eb300650;
+}
+
+.cast p {
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 110%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.char-name {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+.cast a {
+    text-decoration: none;
+}
+
+.cast a p {
+    width: 50%;
+    font-size: 65%;
+    color: #555;
+    margin-left: 25%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s , border-bottom 0.2s; 
+    margin-bottom: 15px;
+}
+
+.cast a p:hover {
+    color: #eb2f06;
+    border-bottom: 1px solid #fa5d3b;
+}
+
+.social {
+    text-align: left;
+    margin: 0 0 15px 20%;
+}
+
+.social:last-of-type {
+    padding-bottom: 20px;
+}
+
+.social ion-icon {
+    font-size: 140%;
+    margin-right: 20px;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
+.fb {
+    color: #3b5998;
+}
+
+.insta {
+    color: #e95950;
+}
+
+.twitter {
+    color: #55acee;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: 400;
+    transition: color 0.2s, font-weight 0.2s;
+}
+
+.social a:hover {
+    color: #555;
+    font-weight: 300;
+}
+
+.social a ion-icon {
+    font-size: 95%;
+    color: #3897f0;
+}
+/* ----------------------------------------- */
+/* ----------Quote-SECTION----------------- */
+/* ----------------------------------------- */
+
+
+
+.quote-section {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    background-image: url(imgs/new-york-wallpaper-7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.quote-section li {
+    width: 33.33%;
+    display: block;
+    float: left;
+    height: 300px;
+    background-position: center; 
+    background-size: cover; 
+    transition: background-image 10s;
+    transition: 0.6s;
+
+}
+
+.quote-section p {  
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    padding-top: 60px;
+    height: 100%;
+    transition: color 0.8s;
+    padding-left: 10px; 
+    font-weight: 300;
+    font-size: 140%;
+    font-style: italic;
+    
+}
+
+.quote-section ion-icon {
+    font-size: 200%;
+    color: #d2dae2;
+}
+
+
+/*----quote images---*/
+
+.one {
+    background-image: url(imgs/Background/Harvey1.jpg);
+}
+
+.two {
+    background-image: url(imgs/Background/Harvey2.jpg);
+}
+
+.three {
+    background-image: url(imgs/Background/Harvey3.jpg);
+}
+
+.four {
+    background-image: url(imgs/Background/Harvey4.jpg);
+}
+
+.five {
+    background-image: url(imgs/Background/Harvey5.jpg);
+}
+
+.six {
+    background-image: url(imgs/Background/Harvey.jpg);
+}
+
+.seven {
+    background-image: url(imgs/Background/Harvey7.jpg);
+}
+
+.eight {
+    background-image: url(imgs/Background/Harvey8.jpg);
+}
+
+.nine {
+    background-image: url(imgs/Background/Harvey9.jpg);
+}
+
+
+
+/*----hover images & ontent---*/
+
+.one:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(imgs/Background/Harvey1.jpg);
+}
+
+.two:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(imgs/Background/Harvey2.jpg);
+}
+
+.three:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(imgs/Background/Harvey3.jpg);
+}
+
+.four:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(imgs/Background/Harvey4.jpg);
+}
+
+.five:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(imgs/Background/Harvey5.jpg);
+}
+
+.six:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(imgs/Background/Harvey.jpg);
+}
+
+.seven:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(imgs/Background/Harvey7.jpg);
+}
+
+.eight:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(imgs/Background/Harvey8.jpg);
+}
+
+.nine:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(imgs/Background/Harvey9.jpg);
+}
+
+.quote-section p:hover {
+    color: #fff;
+}
+
+.quote-section li:hover {
+    transform: scale(0.96);
+    opacity: 0.9;
+}
+
+

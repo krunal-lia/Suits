@@ -1,0 +1,171 @@
+
+
+@media only screen and (max-width: 1200px) {
+
+    .row {margin: 0 2%;}
+    
+    .summary {
+        width: 85%;
+        margin-left: 5%;
+    }
+
+    .rating {font-size: 90%;}
+    .review a:hover {font-size: 100%;}
+
+    .social {
+        margin-left: 10%;
+    }
+
+    .social ion-icon {margin-right: 15px;}
+
+    .cast a p {
+        width: 55%;
+        margin-left: 22.5%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+
+    body {font-size: 18px;}
+    section {padding: 60px 0;}
+    .series-overview .col {
+        width: 100%;
+        margin: 0 1% 1% 0;
+    }
+    .quote-section li {height: 220px;}
+    .quote-section p {
+        font-size: 120%;
+        padding-top: 50px;
+        font-weight: 400;
+    }
+
+    .reviews-section {
+        width: 100%;
+       
+    }
+    .review {
+        width: 40%;
+        margin-left: 27.5%;
+    }
+    .video-section {width: 100%;}
+    video {width: 70%;}
+
+    .cast {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .social ion-icon {margin-right: 10px;}
+    .cast-photo {width: 110px;}
+
+    .cast a p {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    
+  
+}
+
+@media only screen and (max-width: 767px) {
+
+    section {padding: 30px 0;}
+    .main-nav {display: none;}
+
+    h1 {font-size: 600%;}
+    h2 {font-size: 170%}
+    .tagline {font-size: 200%}
+    h5 {font-size: 150%;}
+    .suits-logo {height: 30px;}
+    .review {
+        width: 45%;
+        margin-left: 27.5%;
+    }
+    video {width: 85%;}
+
+    .quote-section li {
+        width: 100%;
+        height: 400px;
+    }
+
+    .quote-section p {  
+        padding-top: 135px;
+        padding-left: 15px; 
+        font-weight: 400;
+        font-size: 200%;
+    }
+
+    .cast a p {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .section-cast .col {
+        width: 100%;
+        margin: 0 0.5% 1% .5%;
+    }
+
+    .cast {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .media {
+        width: 100%;
+        margin-left: 18%;
+    }
+
+}
+
+@media only screen and (max-width: 597px) {
+    body {font-size: 17px;}
+    .row {margin: 0 3%;}
+    .review {
+        width: 55%;
+        margin-left: 22.5%;
+    }
+
+    .quote-section li {
+        height: 350px;
+    }
+
+    .quote-section p {   
+        padding-top: 125px;
+        font-size: 180%;
+    }
+    video {width: 90%;}
+
+    .media {margin-left: 12%;}
+}
+
+@media only screen and (max-width: 480px) {
+    section {padding: 20px 0;}
+    body {font-size: 15px;}
+
+    .tagline {
+        letter-spacing: 6px;
+        word-spacing: 10px;
+    }
+
+    .review {
+        width: 85%;
+        margin-left: 7.5%;
+    }
+
+    .quote-section li {
+        height: 280px;
+    }
+
+    .quote-section p {   
+        padding-top: 75px;
+        font-size: 160%;
+    }
+
+    video {width: 99%;}
+    .cast {
+        width: 80%; 
+        margin-left: 10%;
+    }
+}
+
+
