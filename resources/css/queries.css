@@ -70,7 +70,43 @@
 @media only screen and (max-width: 767px) {
 
     section {padding: 30px 0;}
-    .main-nav {display: none;}
+    /*.main-nav {display: none;} */
+
+    .menu {
+        display: initial;
+    }
+    .main-nav {
+        display: none;
+        float: left;
+        margin-left: 25px;
+        margin-top: 40px;
+    }
+    .main-nav li {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .main-nav li:last-child {
+        padding-bottom: 0;
+    }
+    .sticky .menu,
+    .sticky .close {
+        color: #555;
+        margin-top: 10px;
+    }
+    .sticky .main-nav {
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{
+        border: 0;
+    }
 
     h1 {font-size: 600%;}
     h2 {font-size: 170%}
@@ -165,6 +201,10 @@
     .cast {
         width: 80%; 
         margin-left: 10%;
+    }
+
+    .suits-logo {
+        height: 20px;
     }
 }
 

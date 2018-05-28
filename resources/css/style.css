@@ -170,7 +170,7 @@ h5{
 /* ----------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(imgs/Suits1.jpg);  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(imgs/Suits1-min.jpg);  
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -222,6 +222,15 @@ header {
 .main-nav li a:active {
     color: #eb2f06;
 }
+/*Mobile nav*/
+.menu,
+.close {
+    font-size: 200%;
+    color: #fff;
+    float: right;
+    margin-top: 33px;
+    display: none;
+}
 
 /*Sticky nav*/
 .sticky {
@@ -234,7 +243,8 @@ header {
     z-index: 9999;
 }
 
-.sticky .main-nav li a {
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
     color: #555;
     letter-spacing: 1px;    
     font-weight: 300;
@@ -338,7 +348,7 @@ header {
 /* ----------------------------------------- */
 
 .section-cast {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(imgs/new-york-wallpaper.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(imgs/new-york-wallpaper-min.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -452,9 +462,7 @@ header {
     width: 100%;
     list-style: none;
     overflow: hidden;
-    background-image: url(imgs/new-york-wallpaper-7.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: #81ecec;
 }
 
 .quote-section li {
@@ -574,7 +582,32 @@ header {
 
 .quote-section li:hover {
     transform: scale(0.96);
-    opacity: 0.9;
+   
 }
 
 
+/*----Animations---*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-3 {
+    animation-duration: 1s;
+}
+
+.js--wp-1.animate,
+.js--wp-2.animate,
+.js--wp-4.animate,
+.js--wp-5.animate,
+.js--wp-6.animate,
+.js--wp-7.animate
+{
+    opacity: 1;
+}
